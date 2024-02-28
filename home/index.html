@@ -7,6 +7,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/side-bar.css" />
 
     <link
       rel="stylesheet"
@@ -31,12 +32,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
     -->
 
-    <title>Login In</title>
+    <title>Home / Profile</title>
   </head>
 </html>
-<body>
+<body style="background-color: lightgray">
+
   <!-- nav start -->
-  <div class="container-fluid">
+  <div class="container-fluid p-0 m-0">
     <nav class="navbar navbar-expand-lg navbar-light header">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -57,11 +59,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
+            <!-- Move the search input here -->
+            <li class="nav-item ms-auto">
               <input class="form-control" placeholder="search" />
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 profile-menu">
+          <ul class="navbar-nav mb-2 mb-lg-0 profile-menu">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -74,8 +77,6 @@
                 <div class="profile-pic">
                   <img src="assets/face19.jpg" alt="Profile Picture" />
                 </div>
-                <!-- You can also use icon as follows: -->
-                <!--  <i class="fas fa-user"></i> -->
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
@@ -100,33 +101,332 @@
         </div>
       </div>
     </nav>
+    
     <!-- nav end -->
 
     <!-- dashboard contents start -->
     <div class="container-fluid">
-      <div class="row mt-3">I have content</div>
+      <div class="row">
+        <div class="dashboard-nav col col-md-3 col-lg-2 ms-sm-auto">
+          <header class="container text-center">
+            <a href="#" class="brand-logo row d-block">
+              <div class="col-md-12 mx-auto mb-2 mt-2">
+                <div class="profile-pic">
+                  <img
+                    src="assets/face19.jpg"
+                    alt="Profile Picture"
+                    class="image-fluid"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 mx-auto mb-2">
+                <span class="green-text">Agent</span>
+              </div>
+            </a>
+          </header>
+
+          <nav class="dashboard-nav-list">
+            <a href="#" class="dashboard-nav-item"
+              ><i class="fas fa-home"></i> Home </a
+            ><a href="#" class="dashboard-nav-item active"
+              ><i class="fas fa-tachometer-alt"></i> dashboard </a
+            ><a href="#" class="dashboard-nav-item"
+              ><i class="fas fa-file-upload"></i> Upload
+            </a>
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="fas fa-photo-video"></i> Media
+              </a>
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item">All</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Recent</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Images</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Video</a>
+              </div>
+            </div>
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="fas fa-users"></i> Users
+              </a>
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item">All</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Subscribed</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Non-subscribed</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Banned</a
+                ><a href="#" class="dashboard-nav-dropdown-item">New</a>
+              </div>
+            </div>
+            <div class="dashboard-nav-dropdown">
+              <a
+                href="#!"
+                class="dashboard-nav-item dashboard-nav-dropdown-toggle"
+                ><i class="fas fa-money-check-alt"></i> Payments
+              </a>
+              <div class="dashboard-nav-dropdown-menu">
+                <a href="#" class="dashboard-nav-dropdown-item">All</a
+                ><a href="#" class="dashboard-nav-dropdown-item">Recent</a
+                ><a href="#" class="dashboard-nav-dropdown-item"> Projections</a>
+              </div>
+            </div>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="fas fa-cogs"></i> Settings </a
+            ><a href="#" class="dashboard-nav-item"
+              ><i class="fas fa-user"></i> Profile
+            </a>
+            <div class="nav-item-divider"></div>
+            <a href="#" class="dashboard-nav-item"
+              ><i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </nav>
+        </div>
+        <div class="dashboard-app col col-md-9 col-lg-10 ms-sm-auto">
+          <div class="container-fluid">
+            <div class="content p-3 pl-2">
+              <div class="home-profile rounded">
+                <div class="row"><div class="col-12">Home / Profile</div></div>
+                <div class="row">
+                  <div class="col-12 pt-3 brown-text small">
+                    <p>Please provide some information about yourself.</p>
+                    <p>
+                      The First Name and Last Name you provide will be displayed
+                      alongside any comments, forum posts, or ideas you make on
+                      the site.
+                    </p>
+                    The Email Address and Phone number will not be displayed on
+                    the site.
+                    <p>
+                      Your Organization and Title are optional. They will be
+                      displayed with your comments and forum posts.
+                    </p>
+                  </div>
+                </div>
+                <div class="row mt-2 pl-3">
+                  <div class="col-md-7">
+                    <div class="card brown-text">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6">
+                            <h6 class="blue-text pt-2 ml-2">Your Information</h6>                          
+                          </div>
+                          <div class="col-6 g-1">
+                            <select class="form-select custom-select float-end pr-2" aria-label="Preferred Language">
+                              <option selected>Preferred Language</option>
+                              <option value="1">English</option>
+                              <option value="2">Afrikaans</option>
+                            </select>
+                          </div>
+                        </div>
+                        <form class="row g-3 mt-2 pt-2">
+                          <div class="row pt-1">
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName">
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="password" class="form-control" id="lastName">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-2">
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="firstName" class="form-label">Initials</label>
+                                <input type="text" class="form-control" id="firstName">
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emai">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-2">
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="passport" class="form-label">ID/Passport</label>
+                                <input type="text" class="form-control" id="passport">
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="email" class="form-label">Secondary Email</label>
+                                <input type="email" class="form-control" id="emai">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row pt-2">
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="officeNo" class="form-label">Office Contact Numer</label>
+                                <input type="tel" class="form-control" id="officeNo">
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="cellNo" class="form-label">Cell Phone Number</label>
+                                <input type="tel" class="form-control" id="cellNo">
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row pt-2">
+                            <div class="col-md-6 ">
+                              <div class="form-floating">
+                                <label for="officeNo" class="form-label">Address</label>
+                                <textarea type="tel" class="form-control" id="officeNo" rows="3"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-6 ">
+                              <div class="row">
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                    <label for="cellNo" class="form-label">Broker Number</label>
+                                    <input type="text" class="form-control" id="cellNo">
+                                  </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                  <div class="form-floating">
+                                    <label for="cellNo" class="form-label">FSP Number</label>
+                                    <input type="text" class="form-control" id="cellNo">
+                                  </div>
+                                </div>
+                              </div>                            
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <h6 class="mb-3">Upload your profile image here:</h3>
+                      <div class="drop-area" id="dropArea">
+                        <p class="mb-3">Drag and drop a picture here or click to select a file</p>
+                        <input type="file" class="form-control" id="fileInput" accept="image/*" style="display: none;">
+                      </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="row mt-3">
+                      <div class="col-12">
+                        <table class="table text-start table-sm caption-top">
+                          <caption class="blue-text">Related Agencies</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col">Connect to</th>
+                              <th scope="col">Role (from)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Agri - Em Makelaars (Edms) Bpk</td>
+                              <td>Quote Agent</td>
+                            </tr>
+                            <tr>
+                              <td>Agri - Em Makelaars (Edms) Bpk</td>
+                              <td>Quote Agent</td>
+                            </tr>
+                          </tbody>
+                        </table>                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-12">
+                    <div class="row mt-3">
+                      <div class="col-12">
+                        <table class="table text-start table-sm caption-top">
+                          <caption class="blue-text">Selling Products List</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col">Season</th>
+                              <th scope="col">CoverType</th>
+                              <th scope="col">CoverType</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>2023-2024</td>
+                              <td>Extended Hail - Planned - Maize Commercial (Modification)</td>
+                              <td>No</td>
+                            </tr>
+                            <tr>
+                              <td>2023-2024</td>
+                              <td>Extended Hail - Planned - Maize Commercial (Modification)</td>
+                              <td>No</td>
+                            </tr>
+                            <tr>
+                              <td>2023-2024</td>
+                              <td>Extended Hail - Planned - Maize Commercial (Modification)</td>
+                              <td>No</td>
+                            </tr>
+                            <tr>
+                              <td>2023-2024</td>
+                              <td>Extended Hail - Planned - Maize Commercial (Modification)</td>
+                              <td>No</td>
+                            </tr>
+                          </tbody>
+                        </table>                          
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row"><div class="col-12">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div></div>
+                <div class="row">
+                  <div class="col-12"> 
+                    <button type="submit" class="btn btn-primary custom-btn float-start">
+                      Update
+                    </button>
+                  </div>
+                </div>
+
+                <div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- dashboard contents end -->
+  <footer class="footer mt-4">
+    <span class="footer-content">Copyright © 2024. All rights reserved.</span>
+  </footer>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
-  <script>
-    document.querySelectorAll(".dropdown-toggle").forEach((item) => {
-      item.addEventListener("click", (event) => {
-        if (event.target.classList.contains("dropdown-toggle")) {
-          event.target.classList.toggle("toggle-change");
-        } else if (
-          event.target.parentElement.classList.contains("dropdown-toggle")
-        ) {
-          event.target.parentElement.classList.toggle("toggle-change");
-        }
-      });
-    });
-  </script>
+  <!-- Script JS -->
+  <script src="./js/script.js"></script>
 </body>
-<footer class="footer">
-  <span class="footer-content">Copyright © 2024. All rights reserved.</span>
-</footer>

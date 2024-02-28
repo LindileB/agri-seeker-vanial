@@ -47,14 +47,14 @@
 }
 
 /* $primary-color: rgba(126, 150, 64, 1); */
-.custom-btn {
+.custom-primary-btn {
   color: white;
   background-color: rgba(126, 150, 64, 1);
   font-weight: bold;
   text-transform: uppercase;
   border-color: rgba(126, 150, 64, 1);
   :hover {
-    background-color: rgba(67, 45, 28, 1);
+    background-color: white;
   }
   ::selection {
     background-color: rgba(67, 45, 28, 1);
