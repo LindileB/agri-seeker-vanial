@@ -216,3 +216,27 @@ body {
     background-color: rgb(104, 150, 241);
   }
 }
+
+.pagination {
+  border: none !important;
+  border-radius: 0 !important; /* Remove border-radius for the entire pagination */
+}
+
+.page-item {
+  border: none;
+}
+
+.page-link {
+  border: none !important;
+  border-radius: 50%; /* Make the active page link round */
+}
+
+.page-item.active .page-link {
+  background-color: rgba(
+    16,
+    43,
+    99,
+    1
+  ); /* Set a background color for the active page link */
+  color: #fff; /* Set text color for the active page link */
+}
