@@ -229,6 +229,7 @@ body {
 .page-link {
   border: none !important;
   border-radius: 50%; /* Make the active page link round */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for the active page link */
 }
 
 .page-item.active .page-link {
@@ -239,4 +240,14 @@ body {
     1
   ); /* Set a background color for the active page link */
   color: #fff; /* Set text color for the active page link */
+}
+
+.page-link:hover {
+  background-color: rgba(
+    16,
+    43,
+    99,
+    1
+  ); /* Change hover background color to blue */
+  color: #fff; /* Change text color to white on hover */
 }
