@@ -1,0 +1,86 @@
+/* login.component.css */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/LOGIN.svg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-panel {
+  background-color: rgba(255, 255, 255, 1); /* Adjust the opacity as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  padding: 3em;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin for spacing between logo and form */
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
+
+.header {
+  margin-bottom: 1.8em;
+}
+
+.sub-header {
+  font-size: 0.8em;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+/* $light-grey: rgba(238, 240, 244, 0.9); */
+.brown-text {
+  color: rgba(67, 45, 28, 1);
+}
+.blue-text {
+  color: rgba(16, 43, 99, 1);
+}
+
+/* $primary-color: rgba(126, 150, 64, 1); */
+.custom-btn {
+  color: white;
+  background-color: rgba(126, 150, 64, 1);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-color: rgba(126, 150, 64, 1);
+  :hover {
+    background-color: rgba(67, 45, 28, 1);
+  }
+  ::selection {
+    background-color: rgba(67, 45, 28, 1);
+  }
+}
+
+.form-floating label {
+  color: rgba(67, 45, 28, 1) !important; /* Set the normal color to brown */
+}
+
+.form-floating input:focus + label {
+  color: rgba(16, 43, 99, 1) !important; /* Set the active color to blue */
+}
+
+.form-check-input[type="checkbox"]:checked {
+  background-color: rgba(
+    16,
+    43,
+    99,
+    1
+  ); /* Change the background color to blue */
+  border-color: rgba(16, 43, 99, 1); /* Change the border color to blue */
+  color: #fff; /* Change the text color to white or your preferred color */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
